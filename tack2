@@ -1,0 +1,12 @@
+Car = {} 
+brand_name = input("Enter Brand Name: ") 
+color = input("Enter Color: ") 
+
+Car[brand_name] = color 
+
+print("Dictionary:", Car) 
+
+f = open("Car.txt","w") 
+f.write(str(Car)) 
+
+f.close()
