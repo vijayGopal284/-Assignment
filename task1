@@ -1,0 +1,14 @@
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter second number: '))
+num3 = int(input('Enter third number: '))
+num4 = int(input('Enter fourth number: '))
+num5 = int(input('Enter fifth number: '))
+
+if num1 > 0 and num2 > 0 and num3 > 0 and num4 > 0 and num5 > 0:
+    total = num1 + num2 + num3 + num4 + num5
+    print('The total of the 5 numbers is:',total)
+    with open('total.txt','w') as file:
+        file.write(str(total))
+        file.close
+else:
+    print('Please enter only positive numbers!')
